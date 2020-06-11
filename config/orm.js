@@ -48,6 +48,7 @@ var orm = {
         throw err;
       }
       cb(result);
+      console.log(result);
     });
   },
   create: function(table, cols, vals, cb) {
@@ -90,9 +91,8 @@ var orm = {
   },
   delete: function(table, condition, cb) {
     var queryString = "DELETE FROM " + table;
-    queryString += " WHERE ";
-    queryString += condition;
-
+    queryString += " WHERE eaten = 1";
+console.log(queryString);
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;

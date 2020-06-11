@@ -3,17 +3,17 @@
 <ul>
   {{#each burgers}}
     {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
+      {{> burgers/burger-block eaten = true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Eaten Burgers!</h2>
+<h2>Eaten Burgers</h2>
 
 <ul>
   {{#each burgers}}
     {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
+      {{> burgers/burger-block eaten = false}}
     {{/if}}
   {{/each}}
 </ul>
@@ -28,3 +28,4 @@
 
   <button type="submit">Add Burger</button>
 </form>
+<button class="clear" type="submit">Clear eaten burgers</button>

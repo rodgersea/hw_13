@@ -1,3 +1,3 @@
 
-INSERT INTO burgers (name, eaten) VALUES ('bison', false);
-INSERT INTO burgers (name, eaten) VALUES ('beef', true);
+INSERT INTO burgers (name) VALUES ('bison');
+

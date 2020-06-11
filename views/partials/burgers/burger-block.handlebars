@@ -1,8 +1,8 @@
 <li>
 	{{name}}
 
-	<button class="change-sleep" data-id="{{id}}" data-newsleep="{{sleep}}">
-		{{#if eaten}}Eat{{/if}}
-	</button>
+	{{#if eaten}}
+		<button class="change-sleep" data-id="{{id}}" data-newsleep="{{eaten}}">Eat Burger</button>
+	{{/if}}
 
 </li>
