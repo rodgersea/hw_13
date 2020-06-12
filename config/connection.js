@@ -1,8 +1,8 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 
-if (process.emitWarning.JAWSDB_URL) {
-  connection = mysql.createConnection(precess.eng.JAWSDB_URL);
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(precess.env.JAWSDB_URL);
 } else {
   connection = mysql.createConnection({
     host: "localhost",
